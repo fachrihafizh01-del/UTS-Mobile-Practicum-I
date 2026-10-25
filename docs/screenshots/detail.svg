@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-label="Placeholder screenshot Detail Gerakan">
+  <rect width="390" height="844" rx="24" fill="#F7F5F0"/>
+
+  <path d="M0 24a24 24 0 0 1 24-24h342a24 24 0 0 1 24 24v196H0z" fill="#3E7C8C"/>
+  <text x="24" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#FFFFFF">‹</text>
+  <text x="322" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#FFFFFF">⤴  ☆</text>
+
+  <circle cx="330" cy="120" r="70" fill="#FFFFFF" opacity="0.12"/>
+  <text x="24" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="#FFFFFF" opacity="0.75">PUNGGUNG</text>
+  <text x="24" y="176" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Peregangan Dada</text>
+  <rect x="24" y="194" width="78" height="28" rx="14" fill="#FFFFFF" opacity="0.2"/>
+  <text x="63" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle">⏱ 2 mnt</text>
+  <rect x="110" y="194" width="104" height="28" rx="14" fill="#FFFFFF" opacity="0.2"/>
+  <text x="162" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle">⟳ 3 × 30 dtk</text>
+  <rect x="222" y="194" width="76" height="28" rx="14" fill="#FFFFFF" opacity="0.2"/>
+  <text x="260" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle">▮▯▯ Ringan</text>
+
+  <text x="24" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1E2A28">Tujuan</text>
+  <text x="24" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1E2A28">Mengoreksi postur bahu membulat dan memberi</text>
+  <text x="24" y="301" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1E2A28">ruang lebih lega pada dada.</text>
+
+  <text x="24" y="344" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1E2A28">Cara Melakukan</text>
+
+  <g>
+    <circle cx="38" cy="374" r="14" fill="#DCEAE4"/>
+    <text x="38" y="379" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#2F6F5E" text-anchor="middle">1</text>
+    <text x="62" y="379" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1E2A28">Duduk di tepi kursi dengan punggung tegak.</text>
+
+    <circle cx="38" cy="410" r="14" fill="#DCEAE4"/>
+    <text x="38" y="415" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#2F6F5E" text-anchor="middle">2</text>
+    <text x="62" y="415" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1E2A28">Letakkan kedua tangan di belakang punggung.</text>
+
+    <circle cx="38" cy="446" r="14" fill="#DCEAE4"/>
+    <text x="38" y="451" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#2F6F5E" text-anchor="middle">3</text>
+    <text x="62" y="451" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1E2A28">Tarik bahu ke belakang dan ke bawah.</text>
+
+    <circle cx="38" cy="482" r="14" fill="#DCEAE4"/>
+    <text x="38" y="487" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#2F6F5E" text-anchor="middle">4</text>
+    <text x="62" y="487" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1E2A28">Tahan 30 detik, lalu lepaskan perlahan.</text>
+  </g>
+
+  <rect x="24" y="514" width="342" height="76" rx="16" fill="#FCEBD8" stroke="#C0563F" opacity="0.9"/>
+  <text x="42" y="542" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#1E2A28">⚠  Perhatian</text>
+  <text x="42" y="562" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#1E2A28">Hentikan jika nyeri menjalar ke lengan.</text>
+  <text x="42" y="578" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#1E2A28">atau muncul kesemutan.</text>
+
+  <text x="24" y="628" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1E2A28">Kesalahan Umum</text>
+  <text x="24" y="652" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#5C6B68">✕  Mengangkat bahu alih-alih membuka dada.</text>
+  <text x="24" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#5C6B68">✕  Menahan napas selama peregangan.</text>
+
+  <rect x="0" y="748" width="390" height="96" fill="#FFFFFF"/>
+  <line x1="0" y1="748" x2="390" y2="748" stroke="#EDE9E1"/>
+  <rect x="24" y="764" width="342" height="52" rx="26" fill="#2F6F5E"/>
+  <text x="195" y="796" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">✓  Tandai sudah dilakukan</text>
+
+  <text x="195" y="732" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9AA5A2" text-anchor="middle">PLACEHOLDER — ganti dengan screenshot asli</text>
+</svg>

@@ -1,0 +1,1013 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Laporan UTS Mobile Programming - Tapak</title>
+<style>
+  @page { size: A4; margin: 2.54cm; }
+  body {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000000;
+    margin: 0;
+  }
+  h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 6pt 0;
+    page-break-after: avoid;
+  }
+  h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 18pt 0 8pt 0;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-family: "Arial", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 14pt 0 6pt 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 8pt 0; text-align: justify; }
+  ul, ol { margin: 0 0 10pt 0; padding-left: 24pt; }
+  li { margin-bottom: 4pt; text-align: justify; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 6pt 0 12pt 0;
+    font-size: 9.5pt;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #000000;
+    padding: 4pt 6pt;
+    vertical-align: top;
+    text-align: left;
+  }
+  th { background-color: #E9E9E9; font-weight: bold; }
+  code {
+    font-family: "Consolas", monospace;
+    font-size: 9.5pt;
+    background-color: #F4F4F4;
+    padding: 1pt 2pt;
+  }
+  pre {
+    font-family: "Consolas", monospace;
+    font-size: 8pt;
+    line-height: 1.2;
+    background-color: #F7F7F7;
+    border: 1px solid #D8D8D8;
+    padding: 6pt 8pt;
+    margin: 6pt 0 12pt 0;
+    white-space: pre-wrap;
+  }
+  pre code { background: none; padding: 0; font-size: 8pt; }
+  hr { display: none; }
+  .pb { page-break-before: always; margin: 0; font-size: 1pt; line-height: 1pt; }
+  .cover { text-align: center; }
+  .cover h1 { font-size: 18pt; margin-bottom: 8pt; }
+  .cover h2 { font-size: 14pt; margin: 0 0 24pt 0; }
+  .cover p { text-align: center; margin: 4pt 0; }
+  .cover strong { font-size: 12pt; }
+  .logo {
+    width: 3.6cm;
+    height: 3.6cm;
+    margin: 18pt auto;
+    border: 1px dashed #888888;
+    color: #777777;
+    font-family: "Arial", sans-serif;
+    font-size: 9pt;
+    line-height: 1.4;
+    padding-top: 1.35cm;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .figure { text-align: center; margin: 10pt 0 4pt 0; page-break-inside: avoid; }
+  .figure img { display: block; margin: 0 auto; }
+  img.shot { width: 6.5cm; height: auto; }
+  img.diagram { width: 15.2cm; height: auto; }
+  .caption {
+    text-align: center;
+    font-size: 10pt;
+    margin: 2pt 0 12pt 0;
+    page-break-after: avoid;
+  }
+  .caption strong { font-weight: bold; }
+  .ph {
+    background-color: #FFF2A8;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="cover"><h1 id="laporan-ujian-tengah-semester">LAPORAN UJIAN TENGAH SEMESTER</h1>
+<h2 id="mobile-programming">MOBILE PROGRAMMING</h2>
+<p><strong>APLIKASI TAPAK: PANDUAN PEREGANGAN DAN ERGONOMI BERBASIS FLUTTER</strong></p>
+<br>
+<div class="logo">LOGO<br>FAKULTAS</div>
+<br>
+<p>Disusun oleh:</p>
+<p><strong>Nama:</strong> [NAMA]
+<strong>NIM:</strong> [NIM]
+<strong>Kelas:</strong> [KELAS]</p>
+<br>
+<p><strong>PROGRAM STUDI [NAMA PROGRAM STUDI]</strong>
+<strong>FAKULTAS [NAMA FAKULTAS]</strong>
+<strong>[NAMA UNIVERSITAS]</strong>
+<strong>2026</strong></p>
+<p class="pb">&nbsp;</p>
+</div>
+<h1 id="bab-i">BAB I</h1>
+<h1 id="pendahuluan">PENDAHULUAN</h1>
+<h2 id="11-latar-belakang">1.1 Latar Belakang</h2>
+<p>Perkembangan perangkat mobile telah mengubah cara masyarakat menyelesaikan pekerjaan sehari-hari. Laptop dan telepon pintar memungkinkan aktivitas mengetik, membaca, serta berdiskusi dilakukan dalam posisi duduk yang relatif lama. Kebiasaan tersebut menimbulkan konsekuensi ergonomis, antara lain kekakuan otot leher, nyeri punggung bagian atas, dan ketegangan pada pergelangan tangan. World Health Organization (2020) mencatat bahwa perilaku sedentari yang berkepanjangan berkontribusi terhadap penurunan kualitas kesehatan muskuloskeletal. Di sisi lain, kesadaran untuk melakukan peregangan singkat masih rendah karena keterbatasan pengetahuan mengenai gerakan yang tepat, durasi yang sesuai, serta risiko yang perlu dihindari.</p>
+<p>Berdasarkan kondisi tersebut, penulis merancang aplikasi mobile bernama <strong>Tapak</strong> yang menyajikan panduan peregangan dan ergonomi secara terstruktur. Aplikasi ini mengelompokkan gerakan berdasarkan area tubuh—leher dan bahu, punggung, pergelangan tangan, serta kaki—sehingga pengguna dapat menemukan panduan yang relevan dengan keluhan yang dirasakan. Setiap gerakan dilengkapi tujuan, langkah pelaksanaan, kesalahan umum, peringatan keselamatan, dan manfaat. Dengan demikian, Tapak tidak sekadar menampilkan daftar gerakan, tetapi berfungsi sebagai media edukasi ringkas yang dapat diakses kapan saja melalui perangkat mobile.</p>
+<h2 id="12-alasan-pemilihan-tema">1.2 Alasan Pemilihan Tema</h2>
+<p>Tema kesehatan kerja dipilih dengan pertimbangan berikut.</p>
+<ol>
+<li><strong>Relevansi dengan kehidupan mahasiswa dan pekerja.</strong> Sebagian besar pengguna perangkat digital mengalami keluhan ringan akibat duduk terlalu lama, sehingga tema ini dekat dengan kebutuhan sehari-hari.</li>
+<li><strong>Potensi visual yang kuat namun tetap sederhana.</strong> Area tubuh dapat direpresentasikan melalui ikon dan warna kategori, sehingga antarmuka mudah dipahami tanpa memerlukan aset fotografi yang rumit.</li>
+<li><strong>Konten terukur dan dapat divalidasi.</strong> Setiap gerakan memiliki durasi, repetisi, dan tingkat kesulitan yang jelas, sehingga data dapat dimodelkan secara terstruktur dan siap dipindahkan ke basis data maupun API.</li>
+<li><strong>Bebas dari unsur SARA.</strong> Materi berfokus pada kesehatan dan ergonomi umum, tidak mengaitkan konten dengan suku, agama, ras, atau golongan tertentu.</li>
+</ol>
+<h2 id="13-relevansi-dengan-pengembangan-aplikasi-mobile">1.3 Relevansi dengan Pengembangan Aplikasi Mobile</h2>
+<p>Aplikasi mobile memiliki karakteristik penggunaan yang singkat, berulang, dan personal. Panduan peregangan menit-menit awal bekerja paling efektif apabila dapat diakses secara cepat, tanpa proses masuk yang berbelit, dan dengan navigasi yang dangkal. Oleh karena itu, Tapak dirancang menggunakan tiga lapis navigasi yang sederhana: beranda sebagai pusat orientasi, daftar per kategori sebagai penyaring informasi, dan detail sebagai halaman pendalaman. Pola tersebut sesuai dengan prinsip <em>progressive disclosure</em>, yaitu menyajikan informasi secara bertahap sesuai kebutuhan pengguna.</p>
+<p>Dari sisi teknis, pengembangan aplikasi ini melatih kompetensi yang relevan dengan mata kuliah Mobile Programming, meliputi penyusunan antarmuka responsif dengan widget Flutter, pengelolaan navigasi antarhalaman, pemisahan lapisan data dan tampilan, serta penyiapan arsitektur yang memungkinkan penggantian sumber data dari berkas JSON lokal menjadi layanan API.</p>
+<h2 id="14-tujuan">1.4 Tujuan</h2>
+<p>Tujuan penyusunan laporan dan pengembangan aplikasi ini adalah sebagai berikut.</p>
+<ol>
+<li>Merancang antarmuka aplikasi mobile yang bersih, konsisten, dan responsif dengan tema panduan peregangan serta ergonomi.</li>
+<li>Mengimplementasikan minimal tiga halaman yang saling terhubung melalui navigasi, yaitu beranda, daftar data per kategori, dan detail informasi.</li>
+<li>Menerapkan beragam widget dan tata letak Flutter, antara lain <code>Row</code>, <code>Column</code>, <code>Container</code>, <code>Card</code>, <code>ListView</code>, <code>GridView</code>, dan <code>SliverAppBar</code>.</li>
+<li>Menyediakan data dummy terstruktur yang siap diganti dengan pemanggilan API.</li>
+<li>Menghasilkan kode yang rapi, terdokumentasi, dan dapat dijalankan ulang.</li>
+</ol>
+<h2 id="15-batasan-masalah">1.5 Batasan Masalah</h2>
+<p>Aplikasi dibatasi pada konten edukasi peregangan ringan dan tidak memberikan diagnosis medis. Data yang digunakan merupakan data dummy sebanyak dua belas gerakan dalam empat kategori. Aplikasi belum memiliki fitur autentikasi, basis data daring, maupun pencatatan riwayat pengguna secara permanen.</p>
+<p class="pb">&nbsp;</p>
+<hr />
+<h1 id="bab-ii">BAB II</h1>
+<h1 id="perancangan-antarmuka">PERANCANGAN ANTARMUKA</h1>
+<h2 id="21-konsep-visual">2.1 Konsep Visual</h2>
+<p>Tapak mengusung konsep <em>calm wellness</em>: antarmuka yang tenang, hangat, dan tidak klinis. Kesan tersebut dibangun melalui latar bernuansa krem, warna utama hijau kebiruan yang menenangkan, serta aksen jingga hangat sebagai penanda informasi waktu. Warna kategori dibuat berbeda namun tetap memiliki tingkat saturasi yang setara agar tidak menimbulkan kesan ramai.</p>
+<h3 id="211-palet-warna">2.1.1 Palet Warna</h3>
+<p class="caption"><strong>Tabel 2.1</strong> Palet warna aplikasi Tapak</p>
+<table>
+<thead>
+<tr>
+<th>Peran</th>
+<th>Nama</th>
+<th>Kode HEX</th>
+<th>Penggunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary</td>
+<td>Deep Teal</td>
+<td><code class="gfm-color_chip">#2F6F5E<span style="background-color:#2F6F5E;"></span></code></td>
+<td>Tombol utama, ikon aktif, header gradien</td>
+</tr>
+<tr>
+<td>Primary Container</td>
+<td>Sage Tint</td>
+<td><code class="gfm-color_chip">#DCEAE4<span style="background-color:#DCEAE4;"></span></code></td>
+<td>Latar chip terpilih, badge, kartu sekunder</td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>Warm Amber</td>
+<td><code class="gfm-color_chip">#F2A65A<span style="background-color:#F2A65A;"></span></code></td>
+<td>Aksen durasi dan sorotan</td>
+</tr>
+<tr>
+<td>Secondary Container</td>
+<td>Amber Tint</td>
+<td><code class="gfm-color_chip">#FCEBD8<span style="background-color:#FCEBD8;"></span></code></td>
+<td>Latar kartu peringatan</td>
+</tr>
+<tr>
+<td>Background</td>
+<td>Bone</td>
+<td><code class="gfm-color_chip">#F7F5F0<span style="background-color:#F7F5F0;"></span></code></td>
+<td>Latar seluruh halaman</td>
+</tr>
+<tr>
+<td>Surface</td>
+<td>White</td>
+<td><code class="gfm-color_chip">#FFFFFF<span style="background-color:#FFFFFF;"></span></code></td>
+<td>Kartu dan permukaan konten</td>
+</tr>
+<tr>
+<td>Surface Variant</td>
+<td>Stone</td>
+<td><code class="gfm-color_chip">#EDE9E1<span style="background-color:#EDE9E1;"></span></code></td>
+<td>Garis pemisah dan latar input</td>
+</tr>
+<tr>
+<td>Teks Utama</td>
+<td>Ink</td>
+<td><code class="gfm-color_chip">#1E2A28<span style="background-color:#1E2A28;"></span></code></td>
+<td>Judul dan isi utama</td>
+</tr>
+<tr>
+<td>Teks Sekunder</td>
+<td>Slate</td>
+<td><code class="gfm-color_chip">#5C6B68<span style="background-color:#5C6B68;"></span></code></td>
+<td>Deskripsi dan keterangan</td>
+</tr>
+<tr>
+<td>Teks Nonaktif</td>
+<td>Mist</td>
+<td><code class="gfm-color_chip">#9AA5A2<span style="background-color:#9AA5A2;"></span></code></td>
+<td>Placeholder dan ikon pasif</td>
+</tr>
+<tr>
+<td>Semantik Aman</td>
+<td>Success Green</td>
+<td><code class="gfm-color_chip">#3F8F63<span style="background-color:#3F8F63;"></span></code></td>
+<td>Status gerakan selesai</td>
+</tr>
+<tr>
+<td>Semantik Peringatan</td>
+<td>Warning Red</td>
+<td><code class="gfm-color_chip">#C0563F<span style="background-color:#C0563F;"></span></code></td>
+<td>Kartu peringatan</td>
+</tr>
+</tbody>
+</table>
+<p>Warna aksen kategori ditetapkan sebagai berikut: Leher & Bahu menggunakan <em>Clay</em> <code class="gfm-color_chip">#D97757<span style="background-color:#D97757;"></span></code>, Punggung menggunakan <em>Deep Cyan</em> <code class="gfm-color_chip">#3E7C8C<span style="background-color:#3E7C8C;"></span></code>, Pergelangan Tangan menggunakan <em>Mustard</em> <code class="gfm-color_chip">#C89B3C<span style="background-color:#C89B3C;"></span></code>, dan Kaki menggunakan <em>Muted Plum</em> <code class="gfm-color_chip">#7A6A9B<span style="background-color:#7A6A9B;"></span></code>.</p>
+<p>Pemilihan palet tersebut mempertimbangkan keterbacaan. Rasio kontras teal terhadap putih mencapai sekitar 5,9:1, sedangkan teks Ink terhadap latar Bone sekitar 13:1. Keduanya memenuhi ambang minimum WCAG AA untuk teks berukuran normal. Warna Amber tidak digunakan sebagai warna teks di atas latar terang karena rasio kontrasnya rendah; warna tersebut hanya dipakai sebagai isian, ikon besar, atau garis aksen.</p>
+<p class="figure"><img class="diagram" src="../screenshots/palet.png" alt="Palet warna dan contoh penerapannya pada komponen"></p>
+<p class="caption"><strong>Gambar 2.1</strong> Palet warna aplikasi Tapak</p>
+<h3 id="212-tipografi">2.1.2 Tipografi</h3>
+<p>Tipografi menggunakan dua keluarga huruf dari Google Fonts. <strong>Plus Jakarta Sans</strong> dipakai untuk judul dan elemen antarmuka karena bentuknya geometris-humanis dan memiliki karakter modern. <strong>Inter</strong> dipakai untuk paragraf karena keterbacaannya baik pada ukuran kecil.</p>
+<p class="caption"><strong>Tabel 2.2</strong> Skala tipografi</p>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th align="right">Ukuran</th>
+<th align="right">Bobot</th>
+<th align="right">Tinggi Baris</th>
+<th>Penggunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display Small</td>
+<td align="right">28 sp</td>
+<td align="right">700</td>
+<td align="right">1,25</td>
+<td>Judul utama dan header detail</td>
+</tr>
+<tr>
+<td>Headline Medium</td>
+<td align="right">22 sp</td>
+<td align="right">700</td>
+<td align="right">1,30</td>
+<td>Judul halaman dan sapaan</td>
+</tr>
+<tr>
+<td>Title Large</td>
+<td align="right">18 sp</td>
+<td align="right">600</td>
+<td align="right">1,35</td>
+<td>Judul bagian</td>
+</tr>
+<tr>
+<td>Title Medium</td>
+<td align="right">16 sp</td>
+<td align="right">600</td>
+<td align="right">1,40</td>
+<td>Judul kartu dan nama gerakan</td>
+</tr>
+<tr>
+<td>Body Large</td>
+<td align="right">16 sp</td>
+<td align="right">400</td>
+<td align="right">1,55</td>
+<td>Paragraf dan langkah</td>
+</tr>
+<tr>
+<td>Body Medium</td>
+<td align="right">14 sp</td>
+<td align="right">400</td>
+<td align="right">1,55</td>
+<td>Deskripsi kartu</td>
+</tr>
+<tr>
+<td>Label Large</td>
+<td align="right">14 sp</td>
+<td align="right">600</td>
+<td align="right">1,20</td>
+<td>Teks tombol</td>
+</tr>
+<tr>
+<td>Label Medium</td>
+<td align="right">12 sp</td>
+<td align="right">500</td>
+<td align="right">1,20</td>
+<td>Chip dan badge</td>
+</tr>
+<tr>
+<td>Body Small</td>
+<td align="right">12 sp</td>
+<td align="right">400</td>
+<td align="right">1,40</td>
+<td>Metadata</td>
+</tr>
+<tr>
+<td>Label Small</td>
+<td align="right">11 sp</td>
+<td align="right">600</td>
+<td align="right">1,20</td>
+<td>Label bagian (huruf kapital)</td>
+</tr>
+</tbody>
+</table>
+<p>Teks isi tidak lebih kecil dari 14 sp agar nyaman dibaca pada layar ponsel. Ukuran teks mengikuti preferensi sistem hingga batas 1,3 kali, dan tinggi kartu horizontal menyesuaikan faktor skala tersebut untuk mencegah pemotongan judul.</p>
+<h3 id="213-ikonografi">2.1.3 Ikonografi</h3>
+<p>Ikon menggunakan keluarga <strong>Material Icons</strong> bergaya <em>rounded</em> dengan ukuran 20, 24, atau 32 dp. Konsistensi gaya ikon dijaga agar tidak mencampur bentuk <em>outlined</em> dan <em>filled</em> dalam satu baris.</p>
+<p class="caption"><strong>Tabel 2.3</strong> Ikon pada menu dan kategori</p>
+<table>
+<thead>
+<tr>
+<th>Elemen</th>
+<th>Ikon</th>
+<th>Alasan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beranda</td>
+<td><code>home_rounded</code></td>
+<td>Konvensi navigasi utama</td>
+</tr>
+<tr>
+<td>Latihan</td>
+<td><code>grid_view_rounded</code></td>
+<td>Merepresentasikan kumpulan kategori</td>
+</tr>
+<tr>
+<td>Tentang</td>
+<td><code>info_rounded</code></td>
+<td>Informasi aplikasi</td>
+</tr>
+<tr>
+<td>Leher & Bahu</td>
+<td><code>accessibility_new_rounded</code></td>
+<td>Siluet tubuh bagian atas, netral</td>
+</tr>
+<tr>
+<td>Punggung</td>
+<td><code>airline_seat_recline_normal_rounded</code></td>
+<td>Postur duduk, inti masalah ergonomi</td>
+</tr>
+<tr>
+<td>Pergelangan Tangan</td>
+<td><code>back_hand_rounded</code></td>
+<td>Representasi tangan paling jelas</td>
+</tr>
+<tr>
+<td>Kaki</td>
+<td><code>directions_walk_rounded</code></td>
+<td>Menekankan gerak, bukan anatomi</td>
+</tr>
+<tr>
+<td>Durasi</td>
+<td><code>timer_outlined</code></td>
+<td>Informasi waktu</td>
+</tr>
+<tr>
+<td>Repetisi</td>
+<td><code>repeat_rounded</code></td>
+<td>Pengulangan gerakan</td>
+</tr>
+<tr>
+<td>Peringatan</td>
+<td><code>warning_amber_rounded</code></td>
+<td>Kontraindikasi dan keselamatan</td>
+</tr>
+</tbody>
+</table>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Kumpulan ikon dan penerapannya pada kartu kategori]</span></p>
+<h2 id="22-tata-letak-dan-wireframe">2.2 Tata Letak dan Wireframe</h2>
+<p>Perancangan tata letak menggunakan grid empat kolom dengan margin 16 dp, gutter 16 dp, dan ritme spasi kelipatan 8 dp (4, 8, 12, 16, 24, 32, 48). Radius sudut ditetapkan 12 dp untuk chip, 16 dp untuk kartu, 20 dp untuk kartu hero, dan 28 dp untuk header halaman detail. Elevasi dibuat minimal; kartu menggunakan garis tipis <code class="gfm-color_chip">#EDE9E1<span style="background-color:#EDE9E1;"></span></code> atau bayangan lembut agar antarmuka terasa ringan.</p>
+<h3 id="221-wireframe-beranda">2.2.1 Wireframe Beranda</h3>
+<p>Beranda disusun secara vertikal sebagai berikut: (1) baris sapaan berisi tanggal, salam, subjudul, dan avatar; (2) kolom pencarian; (3) kartu sesi hari ini dengan gradien teal dan tombol mulai; (4) judul bagian "Area Tubuh" dan grid kategori dua kolom; (5) judul "Populer" dan daftar horizontal; (6) judul "Terbaru" dan daftar vertikal kartu.</p>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Wireframe Beranda]</span></p>
+<h3 id="222-wireframe-daftar-per-kategori">2.2.2 Wireframe Daftar per Kategori</h3>
+<p>Halaman daftar memuat app bar dengan judul kategori, kartu ringkasan kategori, dan daftar kartu gerakan. Setiap kartu memuat thumbnail berukuran 72 × 72 dp, judul, subjudul berisi kategori, durasi, tingkat, dan posisi, informasi repetisi, serta tombol "Lihat Detail" selebar kartu.</p>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Wireframe Daftar per Kategori]</span></p>
+<h3 id="223-wireframe-detail">2.2.3 Wireframe Detail</h3>
+<p>Halaman detail menggunakan header yang dapat mengecil (<em>collapsing header</em>) berukuran 220 dp. Header memuat nama kategori, judul gerakan, dan chip informasi. Bagian isi disusun berurutan: tujuan, target otot, cara melakukan dengan penomoran, kartu peringatan, kesalahan umum, dan manfaat. Tombol "Tandai sudah dilakukan" ditempatkan secara tetap di bagian bawah layar.</p>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Wireframe Detail Gerakan]</span></p>
+<h2 id="23-responsivitas">2.3 Responsivitas</h2>
+<p>Tata letak menyesuaikan lebar layar melalui <code>LayoutBuilder</code> dan <code>MediaQuery</code>. Pada ponsel di bawah 600 dp digunakan margin 16 dp dan grid kategori dua kolom. Pada tablet 600–904 dp digunakan margin 24 dp dan grid tiga kolom. Pada layar 905 dp ke atas digunakan margin 32 dp, grid empat kolom, serta pembatasan lebar konten maksimum 900 dp agar baris teks tidak terlalu panjang. Seluruh halaman dibungkus <code>SafeArea</code>, dan teks dinamis dibatasi dengan <code>maxLines</code> serta <code>TextOverflow.ellipsis</code>.</p>
+<h2 id="24-perancangan-di-figma">2.4 Perancangan di Figma</h2>
+<p>Perancangan visual dilakukan pada Figma Community dengan referensi <strong>Task App, Figma Community (dimodifikasi)</strong>. Referensi tersebut digunakan sebagai acuan pola kartu, daftar horizontal, dan navigasi bawah, kemudian disesuaikan dengan identitas Tapak.</p>
+<p>Langkah perancangan dilakukan sebagai berikut.</p>
+<ol>
+<li>Membuat berkas baru dan memisahkan halaman kerja menjadi <em>Foundations</em>, <em>Components</em>, <em>Screens</em>, dan <em>Prototype</em>.</li>
+<li>Menyusun <em>color styles</em> dan <em>text styles</em> sesuai Tabel 2.1 dan Tabel 2.2.</li>
+<li>Membuat frame utama berukuran 390 × 844 dp dengan grid empat kolom, margin 16 dp, dan gutter 16 dp.</li>
+<li>Menyusun komponen tombol, chip, kartu kategori, kartu gerakan, dan navigasi bawah menggunakan <em>auto layout</em>.</li>
+<li>Merangkai tiga layar utama dan menghubungkannya pada mode <em>Prototype</em> dengan transisi <em>smart animate</em> 300 ms.</li>
+<li>Mengekspor setiap frame dalam format PNG dua kali resolusi untuk kebutuhan laporan.</li>
+</ol>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Tampilan frame dan komponen pada Figma]</span></p>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Prototype alur Beranda → Daftar → Detail di Figma]</span></p>
+<p class="pb">&nbsp;</p>
+<hr />
+<h1 id="bab-iii">BAB III</h1>
+<h1 id="implementasi-program">IMPLEMENTASI PROGRAM</h1>
+<h2 id="31-lingkungan-pengembangan">3.1 Lingkungan Pengembangan</h2>
+<p>Aplikasi dikembangkan menggunakan Flutter dengan Dart SDK 3.13.2 dan Material 3. Dependensi utama yang digunakan adalah <code>google_fonts</code> untuk tipografi dan <code>http</code> yang disiapkan untuk migrasi data ke API. Platform target meliputi Android, iOS, dan web.</p>
+<h2 id="32-struktur-proyek">3.2 Struktur Proyek</h2>
+<p>Struktur direktori disusun berdasarkan tanggung jawab agar mudah ditelusuri dan diuji.</p>
+<pre><code class="language-text">tapak/
+├── assets/
+│   ├── data/exercises.json          # 12 data dummy, 4 kategori
+│   └── images/gerakan/              # gambar gerakan (opsional)
+├── docs/screenshots/                # dokumentasi tangkapan layar
+├── lib/
+│   ├── main.dart                    # entry point, tema, shell navigasi
+│   ├── models/exercise.dart         # model data + fromJson/toJson
+│   ├── data/
+│   │   ├── exercise_repository.dart
+│   │   ├── local_exercise_repository.dart
+│   │   ├── api_exercise_repository.dart
+│   │   └── repository_provider.dart
+│   ├── pages/
+│   │   ├── home_page.dart
+│   │   ├── list_page.dart
+│   │   └── detail_page.dart
+│   └── utils/
+│       ├── app_theme.dart
+│       └── app_categories.dart
+└── test/
+    ├── exercise_model_test.dart
+    ├── home_page_test.dart
+    └── list_page_test.dart
+</code></pre>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Struktur folder proyek pada editor kode]</span></p>
+<h2 id="33-struktur-navigasi">3.3 Struktur Navigasi</h2>
+<p>Navigasi dibagi menjadi dua lapis. Lapis pertama adalah menu utama yang menggunakan <code>NavigationBar</code> Material 3—padanan modern dari <code>BottomNavigationBar</code>—dengan tiga tujuan: Beranda, Latihan, dan Tentang. Ketiga halaman disimpan dalam <code>IndexedStack</code> agar keadaan gulir dan data tidak hilang saat berpindah tab. Lapis kedua adalah navigasi bertingkat menggunakan <code>Navigator.push</code> untuk berpindah dari beranda ke daftar, dan dari daftar ke detail.</p>
+<p class="caption"><strong>Tabel 3.1</strong> Struktur halaman dan berkas</p>
+<table>
+<thead>
+<tr>
+<th>Halaman</th>
+<th>Berkas</th>
+<th>Cara Akses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beranda</td>
+<td><code>lib/pages/home_page.dart</code></td>
+<td>Tab pertama pada <code>MainShell</code></td>
+</tr>
+<tr>
+<td>Daftar per Kategori</td>
+<td><code>lib/pages/list_page.dart</code></td>
+<td><code>Navigator.push</code> dari Beranda atau tab Latihan</td>
+</tr>
+<tr>
+<td>Detail Gerakan</td>
+<td><code>lib/pages/detail_page.dart</code></td>
+<td><code>Navigator.push</code> dari Daftar maupun Beranda</td>
+</tr>
+<tr>
+<td>Pilih Kategori</td>
+<td><code>lib/main.dart</code></td>
+<td>Tab kedua pada <code>MainShell</code></td>
+</tr>
+<tr>
+<td>Tentang</td>
+<td><code>lib/main.dart</code></td>
+<td>Tab ketiga pada <code>MainShell</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-dart">// lib/main.dart (disederhanakan)
+class _MainShellState extends State<MainShell> {
+  int _index = 0;
+
+  static const List<Widget> _pages = <Widget>[
+    HomePage(),
+    _CategoryOverviewPage(),
+    _AboutPage(),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: IndexedStack(index: _index, children: _pages),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _index,
+        onDestinationSelected: (value) => setState(() => _index = value),
+        destinations: const <NavigationDestination>[
+          NavigationDestination(
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home_rounded),
+            label: 'Beranda',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.grid_view_outlined),
+            selectedIcon: Icon(Icons.grid_view_rounded),
+            label: 'Latihan',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.info_outline_rounded),
+            selectedIcon: Icon(Icons.info_rounded),
+            label: 'Tentang',
+          ),
+        ],
+      ),
+    );
+  }
+}
+</code></pre>
+<p>Perpindahan dari beranda ke daftar dan detail diimplementasikan sebagai berikut.</p>
+<pre><code class="language-dart">// lib/pages/home_page.dart
+void _openCategory(String kategoriId) {
+  Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      builder: (_) => ListPage(kategoriId: kategoriId),
+    ),
+  );
+}
+
+void _openExercise(Exercise exercise) {
+  Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      builder: (_) => DetailPage(exercise: exercise),
+    ),
+  );
+}
+</code></pre>
+<pre><code class="language-dart">// lib/pages/list_page.dart
+Navigator.of(context).push(
+  MaterialPageRoute<void>(
+    builder: (_) => DetailPage(exercise: exercise),
+  ),
+);
+</code></pre>
+<p>Tombol kembali pada <code>AppBar</code> maupun <code>SliverAppBar</code> memanggil <code>Navigator.of(context).pop()</code>, sehingga pengguna dapat kembali ke halaman sebelumnya melalui tombol di layar atau tombol <em>back</em> sistem.</p>
+<p class="figure"><img class="diagram" src="../screenshots/alur-navigasi.png" alt="Diagram alur navigasi"></p>
+<p class="caption"><strong>Gambar 3.1</strong> Alur navigasi Beranda -> Daftar -> Detail</p>
+<h2 id="34-implementasi-widget-utama">3.4 Implementasi Widget Utama</h2>
+<h3 id="341-beranda">3.4.1 Beranda</h3>
+<p>Beranda memadukan beberapa pola tata letak. Header menggunakan <code>Row</code> dengan <code>Expanded</code> agar kolom teks mengisi ruang yang tersedia. Pencarian menggunakan <code>TextField</code> di dalam <code>Container</code> bergaris dan berbayang. Grid kategori menggunakan <code>GridView.builder</code> dengan <code>SliverGridDelegateWithFixedCrossAxisCount</code>. Bagian populer menggunakan <code>ListView.separated</code> horizontal di dalam <code>SizedBox</code>, sedangkan bagian terbaru menggunakan <code>Column</code> berisi <code>Card</code>.</p>
+<pre><code class="language-dart">// lib/pages/home_page.dart (disederhanakan)
+LayoutBuilder(
+  builder: (context, constraints) {
+    final width = constraints.maxWidth;
+    final isTablet = width >= 600;
+    final horizontalPadding = width >= 900 ? 32.0 : (isTablet ? 24.0 : 16.0);
+    final categoryColumns = width >= 1200 ? 4 : (isTablet ? 3 : 2);
+
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 900),
+        child: ListView(
+          padding: EdgeInsets.fromLTRB(horizontalPadding, 12, horizontalPadding, 32),
+          children: [
+            _buildHeader(context),
+            _buildSearchField(context),
+            _buildTodayCard(context, all),
+            _buildCategoryGrid(all, columns: categoryColumns),
+            _buildPopularList(all, height: 196, cardWidth: 208),
+            _buildRecentList(all),
+          ],
+        ),
+      ),
+    );
+  },
+)
+</code></pre>
+<h3 id="342-daftar-per-kategori">3.4.2 Daftar per Kategori</h3>
+<p>Halaman daftar menerima parameter <code>kategoriId</code> melalui konstruktor, kemudian meminta data terfilter kepada repository. Daftar dirender dengan <code>ListView.builder</code> dan setiap item dibungkus <code>Card</code>.</p>
+<pre><code class="language-dart">// lib/pages/list_page.dart (disederhanakan)
+class ListPage extends StatefulWidget {
+  const ListPage({
+    super.key,
+    required this.kategoriId,
+    this.repository,
+    this.onDetailTap,
+  });
+
+  final String kategoriId;
+  final ExerciseRepository? repository;
+  final ValueChanged<Exercise>? onDetailTap;
+  // ...
+}
+
+// Bagian pembangun daftar
+ListView.builder(
+  itemCount: items.length + 1,
+  itemBuilder: (context, index) {
+    if (index == 0) {
+      return _CategoryHeader(category: category, count: items.length);
+    }
+    final exercise = items[index - 1];
+    return _ExerciseListCard(
+      exercise: exercise,
+      onDetailTap: () => _openDetail(exercise),
+    );
+  },
+)
+</code></pre>
+<p>Ketika data kosong, halaman menampilkan <code>_EmptyState</code> berisi ikon kategori, pesan "Belum ada gerakan", penjelasan singkat, dan tombol kembali ke beranda.</p>
+<h3 id="343-detail-gerakan">3.4.3 Detail Gerakan</h3>
+<p>Halaman detail menggunakan <code>CustomScrollView</code> dengan <code>SliverAppBar</code> yang tetap terlihat saat digulir. Header menampilkan gradien sesuai warna kategori, ikon besar transparan, judul, dan chip informasi. Bagian isi disusun dalam <code>SliverToBoxAdapter</code> dan dibatasi lebarnya agar nyaman dibaca pada layar lebar.</p>
+<pre><code class="language-dart">// lib/pages/detail_page.dart (disederhanakan)
+CustomScrollView(
+  slivers: [
+    SliverAppBar(
+      expandedHeight: 220,
+      pinned: true,
+      backgroundColor: category.warna,
+      flexibleSpace: FlexibleSpaceBar(
+        title: Text(exercise.nama),
+        background: /* gradien, ikon, chip informasi */,
+      ),
+    ),
+    SliverToBoxAdapter(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _SectionTitle(title: 'Tujuan'),
+          Text(exercise.tujuan),
+          _SectionTitle(title: 'Cara Melakukan'),
+          ..._buildSteps(context, exercise.langkah),
+          if (exercise.memilikiPeringatan)
+            _WarningCard(text: exercise.peringatan!),
+        ],
+      ),
+    ),
+  ],
+)
+</code></pre>
+<h2 id="35-pengolahan-data-dummy">3.5 Pengolahan Data Dummy</h2>
+<p>Data disimpan pada <code>assets/data/exercises.json</code> dan didaftarkan pada <code>pubspec.yaml</code>. Berkas tersebut memuat dua belas gerakan dalam empat kategori, masing-masing tiga gerakan. Setiap objek memiliki field <code>id</code>, <code>nama</code>, <code>kategori</code>, <code>deskripsi</code>, <code>gambar</code>, <code>durasiDetik</code>, <code>repetisi</code>, <code>tingkat</code>, <code>posisi</code>, <code>target</code>, <code>tujuan</code>, <code>langkah</code>, <code>kesalahanUmum</code>, <code>peringatan</code>, <code>manfaat</code>, dan <code>populer</code>.</p>
+<pre><code class="language-json">{
+  "id": "ex-004",
+  "nama": "Peregangan Dada di Kursi",
+  "kategori": "punggung",
+  "deskripsi": "Membuka area dada yang memendek akibat bahu membulat.",
+  "gambar": "assets/images/gerakan/peregangan-dada.webp",
+  "durasiDetik": 120,
+  "repetisi": "3 × 30 detik",
+  "tingkat": "Ringan",
+  "posisi": "Duduk",
+  "target": ["Otot pectoralis", "Otot depan bahu"],
+  "tujuan": "Mengoreksi postur bahu membulat dan memberi ruang lebih lega pada dada.",
+  "langkah": ["Duduk di tepi kursi dengan punggung tegak.", "..."],
+  "kesalahanUmum": ["Mengangkat bahu alih-alih membuka dada.", "..."],
+  "peringatan": "Hentikan jika terasa nyeri menjalar ke lengan.",
+  "manfaat": ["Membuka area dada", "Mengurangi bahu membulat"],
+  "populer": true
+}
+</code></pre>
+<p>Model <code>Exercise</code> menyediakan <code>fromJson</code> dan <code>toJson</code>. Proses parsing dibuat defensif agar perubahan tipe data dari API tidak menyebabkan aplikasi berhenti.</p>
+<pre><code class="language-dart">// lib/models/exercise.dart (disederhanakan)
+factory Exercise.fromJson(Map<String, dynamic> json) {
+  return Exercise(
+    id: _asString(json['id']),
+    nama: _asString(json['nama']),
+    kategori: _asString(json['kategori']),
+    durasiDetik: _asInt(json['durasiDetik']),
+    target: _asStringList(json['target']),
+    langkah: _asStringList(json['langkah']),
+    peringatan: _asNullableString(json['peringatan']),
+    populer: _asBool(json['populer']),
+    // ...
+  );
+}
+</code></pre>
+<p>Repository didefinisikan sebagai antarmuka agar sumber data dapat diganti tanpa menyentuh halaman.</p>
+<pre><code class="language-dart">// lib/data/exercise_repository.dart
+abstract class ExerciseRepository {
+  Future<List<Exercise>> fetchExercises({String? kategori});
+  Future<Exercise?> fetchExerciseById(String id);
+}
+</code></pre>
+<p>Implementasi lokal membaca aset melalui <code>rootBundle</code> dan menyimpan hasil parsing di memori.</p>
+<pre><code class="language-dart">// lib/data/local_exercise_repository.dart (disederhanakan)
+final raw = await _bundle.loadString(assetPath);
+final decoded = jsonDecode(raw);
+final items = decoded is List ? decoded : decoded['data'] as List;
+return _cache = items
+    .whereType<Map<String, dynamic>>()
+    .map(Exercise.fromJson)
+    .toList(growable: false);
+</code></pre>
+<p>Untuk migrasi ke API, telah disediakan <code>ApiExerciseRepository</code> yang menggunakan paket <code>http</code>, serta <code>RepositoryProvider</code> sebagai saklar konfigurasi.</p>
+<pre><code class="language-dart">// lib/data/repository_provider.dart
+static const bool useApi = bool.fromEnvironment('USE_API', defaultValue: false);
+static const String apiBaseUrl = String.fromEnvironment(
+  'API_BASE_URL',
+  defaultValue: 'https://api.example.com/v1',
+);
+
+static ExerciseRepository get exerciseRepository => useApi
+    ? ApiExerciseRepository(baseUrl: apiBaseUrl)
+    : LocalExerciseRepository();
+</code></pre>
+<p>Dengan mekanisme tersebut, perpindahan sumber data cukup dilakukan melalui perintah berikut tanpa mengubah kode antarmuka.</p>
+<pre><code class="language-bash">flutter run --dart-define=USE_API=true \
+            --dart-define=API_BASE_URL=https://domain-kamu/api/v1
+</code></pre>
+<h2 id="36-tampilan-hasil-implementasi">3.6 Tampilan Hasil Implementasi</h2>
+<p class="figure"><img class="shot" src="../screenshots/beranda.png" alt="Halaman Beranda"></p>
+<p class="caption"><strong>Gambar 3.2</strong> Halaman Beranda</p>
+<p class="figure"><img class="shot" src="../screenshots/daftar.png" alt="Halaman Daftar per Kategori"></p>
+<p class="caption"><strong>Gambar 3.3</strong> Halaman Daftar per Kategori</p>
+<p class="figure"><img class="shot" src="../screenshots/detail.png" alt="Halaman Detail Gerakan"></p>
+<p class="caption"><strong>Gambar 3.4</strong> Halaman Detail Gerakan</p>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Halaman Tentang dan tab Latihan]</span></p>
+<p class="caption"><strong>Gambar 3.5</strong> Halaman pendukung pada menu navigasi bawah</p>
+<h2 id="37-pengujian-dan-cara-menjalankan">3.7 Pengujian dan Cara Menjalankan</h2>
+<p>Pengujian dilakukan dengan <code>flutter analyze</code> dan <code>flutter test</code>. Hasil analisis menunjukkan tidak ada temuan, sedangkan tujuh pengujian lulus, mencakup pengujian model, beranda, dan daftar.</p>
+<pre><code class="language-bash">flutter pub get
+flutter analyze      # No issues found!
+flutter test         # 7 tests passed
+flutter run          # menjalankan aplikasi
+</code></pre>
+<p class="caption"><strong>Tabel 3.2</strong> Ringkasan pengujian</p>
+<table>
+<thead>
+<tr>
+<th>Berkas Uji</th>
+<th>Cakupan</th>
+<th>Hasil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>exercise_model_test.dart</code></td>
+<td>Parsing JSON, nilai default, konsistensi <code>toJson</code></td>
+<td>Lulus</td>
+</tr>
+<tr>
+<td><code>home_page_test.dart</code></td>
+<td>Bagian beranda tampil, pencarian menyaring data</td>
+<td>Lulus</td>
+</tr>
+<tr>
+<td><code>list_page_test.dart</code></td>
+<td>Filter kategori, state kosong</td>
+<td>Lulus</td>
+</tr>
+</tbody>
+</table>
+<p class="pb">&nbsp;</p>
+<hr />
+<h1 id="bab-iv">BAB IV</h1>
+<h1 id="hasil-dan-pembahasan">HASIL DAN PEMBAHASAN</h1>
+<h2 id="41-kesesuaian-desain-awal-dan-hasil-akhir">4.1 Kesesuaian Desain Awal dan Hasil Akhir</h2>
+<p>Secara umum, hasil implementasi mengikuti rancangan pada Bab II. Perbedaan yang muncul bersifat penyesuaian teknis dan penyederhanaan aset, bukan perubahan arah desain.</p>
+<p class="caption"><strong>Tabel 4.1</strong> Perbandingan rancangan dan hasil implementasi</p>
+<table>
+<thead>
+<tr>
+<th>Aspek</th>
+<th>Rancangan</th>
+<th>Hasil Implementasi</th>
+<th>Keterangan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Palet warna</td>
+<td>Teal, amber, bone, ink</td>
+<td>Sesuai, tersimpan sebagai token pada <code>app_theme.dart</code></td>
+<td>Konsisten di seluruh halaman</td>
+</tr>
+<tr>
+<td>Tipografi</td>
+<td>Plus Jakarta Sans dan Inter</td>
+<td>Sesuai melalui <code>google_fonts</code></td>
+<td>Ukuran dan bobot mengikuti skala</td>
+</tr>
+<tr>
+<td>Navigasi</td>
+<td>Bottom navigation dan navigasi bertingkat</td>
+<td><code>NavigationBar</code> dan <code>Navigator.push</code></td>
+<td>Berfungsi</td>
+</tr>
+<tr>
+<td>Grid kategori</td>
+<td>Dua kolom pada ponsel</td>
+<td>Dua, tiga, atau empat kolom sesuai lebar</td>
+<td>Lebih adaptif</td>
+</tr>
+<tr>
+<td>Gambar gerakan</td>
+<td>Foto/ilustrasi</td>
+<td>Fallback ikon dan gradien kategori</td>
+<td>Aset gambar belum disediakan</td>
+</tr>
+<tr>
+<td>Header detail</td>
+<td>Header berwarna kategori</td>
+<td><code>SliverAppBar</code> yang mengecil saat digulir</td>
+<td>Sesuai, dengan tambahan efek gulir</td>
+</tr>
+</tbody>
+</table>
+<p>Perbedaan paling terlihat adalah ketiadaan foto gerakan. Karena aset fotografi belum tersedia, komponen thumbnail memakai ikon kategori dengan latar gradien. Mekanisme ini tetap menjaga konsistensi visual dan tidak menimbulkan galat saat aplikasi dijalankan. Apabila berkas gambar ditambahkan ke <code>assets/images/gerakan/</code>, tampilan akan otomatis menggunakan gambar tersebut.</p>
+<p><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: Perbandingan side-by-side desain Figma dan hasil aplikasi]</span></p>
+<p class="caption"><strong>Gambar 4.1</strong> Perbandingan desain Figma dan hasil implementasi</p>
+<h2 id="42-fungsi-tiap-halaman">4.2 Fungsi Tiap Halaman</h2>
+<p class="caption"><strong>Tabel 4.2</strong> Fungsi halaman</p>
+<table>
+<thead>
+<tr>
+<th>Halaman</th>
+<th>Fungsi Utama</th>
+<th>Unsur Pendukung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beranda</td>
+<td>Orientasi awal, pencarian, dan pintasan kategori</td>
+<td>Sapaan, kartu sesi, populer, terbaru</td>
+</tr>
+<tr>
+<td>Daftar per Kategori</td>
+<td>Menyaring gerakan berdasarkan area tubuh</td>
+<td>Header kategori, kartu gerakan, state kosong</td>
+</tr>
+<tr>
+<td>Detail</td>
+<td>Menyajikan instruksi lengkap dan keselamatan</td>
+<td>Header dinamis, langkah bernomor, peringatan, manfaat</td>
+</tr>
+<tr>
+<td>Pilih Kategori</td>
+<td>Pintasan ke seluruh kategori dari menu bawah</td>
+<td>Daftar kartu kategori</td>
+</tr>
+<tr>
+<td>Tentang</td>
+<td>Menjelaskan tujuan dan alur aplikasi</td>
+<td>Ringkasan fitur dan navigasi</td>
+</tr>
+</tbody>
+</table>
+<h2 id="43-interaksi-pengguna">4.3 Interaksi Pengguna</h2>
+<p>Alur interaksi utama berjalan sebagai berikut. Pengguna membuka aplikasi dan disajikan beranda. Apabila pengguna menekan salah satu kartu kategori, aplikasi membuka halaman daftar dengan kategori terkait. Pada halaman daftar, pengguna dapat menggulir, menarik ke bawah untuk memuat ulang, dan menekan tombol "Lihat Detail" untuk membuka halaman detail. Dari halaman detail, pengguna dapat menandai gerakan sebagai sudah dilakukan, lalu kembali melalui tombol panah pada header atau tombol <em>back</em> sistem.</p>
+<p class="caption"><strong>Tabel 4.3</strong> Interaksi dan respons sistem</p>
+<table>
+<thead>
+<tr>
+<th>Aksi Pengguna</th>
+<th>Respons Sistem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mengetik pada kolom pencarian</td>
+<td>Daftar tersaring berdasarkan nama, deskripsi, kategori, dan target otot</td>
+</tr>
+<tr>
+<td>Menekan kartu kategori</td>
+<td><code>Navigator.push</code> membuka <code>ListPage</code> sesuai kategori</td>
+</tr>
+<tr>
+<td>Menekan kartu populer atau terbaru</td>
+<td><code>Navigator.push</code> membuka <code>DetailPage</code></td>
+</tr>
+<tr>
+<td>Menekan "Lihat Detail"</td>
+<td>Membuka halaman detail gerakan</td>
+</tr>
+<tr>
+<td>Menarik daftar ke bawah</td>
+<td><code>RefreshIndicator</code> memuat ulang data</td>
+</tr>
+<tr>
+<td>Menekan "Tandai sudah dilakukan"</td>
+<td>Status berubah dan SnackBar konfirmasi muncul</td>
+</tr>
+<tr>
+<td>Menekan tombol kembali</td>
+<td><code>Navigator.pop</code> kembali ke halaman sebelumnya</td>
+</tr>
+<tr>
+<td>Berpindah tab menu bawah</td>
+<td><code>IndexedStack</code> menampilkan halaman tanpa kehilangan state</td>
+</tr>
+</tbody>
+</table>
+<h2 id="44-responsivitas-dan-aksesibilitas">4.4 Responsivitas dan Aksesibilitas</h2>
+<p>Pengujian tata letak dilakukan pada lebar 320, 390, 412, dan 768 dp serta pada skala teks 1,3 kali. Grid kategori berubah jumlah kolom, margin menyesuaikan, dan konten dibatasi maksimum 900 dp pada layar lebar. Seluruh tombol memiliki tinggi minimum 44 dp, teks dinamis dibatasi jumlah barisnya, dan warna teks utama memenuhi kontras minimum. Dukungan pembaca layar belum dioptimalkan secara menyeluruh, namun label tombol telah disediakan melalui <code>tooltip</code> dan teks yang jelas.</p>
+<h2 id="45-ketercapaian-tujuan">4.5 Ketercapaian Tujuan</h2>
+<p class="caption"><strong>Tabel 4.4</strong> Ketercapaian tujuan dan kriteria penilaian</p>
+<table>
+<thead>
+<tr>
+<th>Kriteria</th>
+<th>Indikator</th>
+<th>Capaian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI/UX</td>
+<td>Palet, tipografi, dan komponen konsisten; state lengkap</td>
+<td>Tercapai</td>
+</tr>
+<tr>
+<td>Navigasi</td>
+<td>Tiga halaman terhubung; bottom navigation dan <code>Navigator.push</code></td>
+<td>Tercapai</td>
+</tr>
+<tr>
+<td>Widget dan layout</td>
+<td><code>Row</code>, <code>Column</code>, <code>Container</code>, <code>Card</code>, <code>ListView</code>, <code>GridView</code>, <code>SliverAppBar</code></td>
+<td>Tercapai</td>
+</tr>
+<tr>
+<td>Data dummy</td>
+<td>Dua belas data, empat kategori, model dan repository</td>
+<td>Tercapai</td>
+</tr>
+<tr>
+<td>Kerapian kode</td>
+<td>Struktur folder, komentar, pengujian</td>
+<td>Tercapai</td>
+</tr>
+<tr>
+<td>Kreativitas</td>
+<td>Tema ergonomi, header dinamis, fallback visual kategori</td>
+<td>Tercapai</td>
+</tr>
+</tbody>
+</table>
+<p>Tujuan utama aplikasi telah tercapai. Pengguna dapat menemukan gerakan berdasarkan kategori, membaca instruksi secara lengkap, dan berpindah halaman dengan alur yang jelas. Aplikasi juga telah memenuhi syarat teknis tugas, yaitu minimal tiga halaman yang saling terhubung, penggunaan beragam widget, serta data dummy yang terstruktur.</p>
+<h2 id="46-kendala-dan-solusi">4.6 Kendala dan Solusi</h2>
+<ol>
+<li><strong>Ketiadaan aset gambar gerakan.</strong> Solusi: komponen thumbnail dibuat dengan <code>errorBuilder</code> dan fallback berupa ikon kategori di atas gradien. Dengan demikian, aplikasi tetap berjalan tanpa gambar.</li>
+<li><strong>Perbedaan tipe data pada JSON dan API.</strong> Solusi: model menerapkan parsing defensif untuk string, bilangan, daftar, dan boolean.</li>
+<li><strong>Teks panjang pada layar sempit.</strong> Solusi: penerapan <code>Expanded</code>, <code>Flexible</code>, <code>maxLines</code>, dan <code>TextOverflow.ellipsis</code>, serta penyesuaian tinggi kartu terhadap skala teks.</li>
+<li><strong>Tipografi daring.</strong> <code>google_fonts</code> mengunduh font saat pertama kali dijalankan. Solusi: aplikasi tetap memiliki font fallback, dan font dapat dibundel secara lokal apabila diperlukan.</li>
+</ol>
+<p class="pb">&nbsp;</p>
+<hr />
+<h1 id="bab-v">BAB V</h1>
+<h1 id="kesimpulan">KESIMPULAN</h1>
+<h2 id="51-ringkasan-proses">5.1 Ringkasan Proses</h2>
+<p>Pengembangan aplikasi Tapak dimulai dari pemilihan tema, penyusunan konsep visual, perancangan wireframe dan prototipe, hingga implementasi dalam Flutter. Proses tersebut menghasilkan aplikasi dengan tiga halaman utama—beranda, daftar per kategori, dan detail—yang dilengkapi dua halaman pendukung pada menu navigasi bawah. Data disimpan pada berkas JSON lokal dan diakses melalui lapisan repository yang terpisah dari antarmuka.</p>
+<h2 id="52-pencapaian">5.2 Pencapaian</h2>
+<ol>
+<li>Antarmuka dengan palet, tipografi, ikon, dan komponen yang konsisten telah berhasil diimplementasikan.</li>
+<li>Navigasi dua lapis—menu bawah dan navigasi bertingkat—berfungsi dengan baik dan menjaga state antar tab.</li>
+<li>Beragam widget dan tata letak Flutter diterapkan, termasuk <code>SliverAppBar</code>, <code>GridView</code>, <code>ListView</code> horizontal dan vertikal, serta tata letak responsif berbasis <code>LayoutBuilder</code>.</li>
+<li>Data dummy sebanyak dua belas gerakan dalam empat kategori berhasil dimodelkan, dibaca dari JSON, dan siap dipindahkan ke API melalui <code>RepositoryProvider</code>.</li>
+<li>Kode telah melalui <code>flutter analyze</code> tanpa temuan dan tujuh pengujian otomatis dengan hasil lulus.</li>
+</ol>
+<h2 id="53-refleksi">5.3 Refleksi</h2>
+<p>Proses pengembangan menunjukkan bahwa kualitas antarmuka tidak hanya ditentukan oleh pemilihan warna, tetapi juga oleh konsistensi token desain, hierarki tipografi, dan penanganan keadaan seperti memuat, kosong, dan galat. Pemisahan lapisan data dari tampilan terbukti mempermudah pengujian dan perubahan sumber data. Kendala utama yang dihadapi adalah penyediaan aset visual dan penyesuaian tata letak pada layar sempit, yang diselesaikan melalui fallback visual dan pembatasan teks.</p>
+<h2 id="54-potensi-pengembangan">5.4 Potensi Pengembangan</h2>
+<p>Beberapa pengembangan yang dapat dilakukan pada tahap berikutnya adalah sebagai berikut.</p>
+<ol>
+<li>Mengintegrasikan REST API dan basis data sehingga konten dapat diperbarui tanpa merilis aplikasi baru.</li>
+<li>Menambahkan pengingat peregangan berbasis notifikasi lokal sesuai jam kerja pengguna.</li>
+<li>Menyediakan penghitung waktu dan animasi gerakan agar panduan lebih interaktif.</li>
+<li>Menyimpan riwayat latihan dan statistik mingguan secara lokal maupun daring.</li>
+<li>Menambahkan dukungan mode gelap, pembaca layar, serta lokalisasi bahasa.</li>
+<li>Mengganti ilustrasi kategori dengan foto atau animasi gerakan yang diproduksi khusus.</li>
+</ol>
+<p class="pb">&nbsp;</p>
+<hr />
+<h1 id="daftar-pustaka">DAFTAR PUSTAKA</h1>
+<p>Flutter. (2026). <em>Flutter documentation</em>. <a href="https://docs.flutter.dev">https://docs.flutter.dev</a></p>
+<p>Google. (2026). <em>Material Design 3</em>. <a href="https://m3.material.io">https://m3.material.io</a></p>
+<p>Google Fonts. (2026). <em>Plus Jakarta Sans dan Inter</em>. <a href="https://fonts.google.com">https://fonts.google.com</a></p>
+<p>World Health Organization. (2020). <em>WHO guidelines on physical activity and sedentary behaviour</em>. World Health Organization.</p>
+<p>Task App. (2026). <em>Figma Community</em> [Referensi desain, dimodifikasi]. <a href="https://www.figma.com/community">https://www.figma.com/community</a></p>
+<hr />
+<p><strong>Catatan penyusunan:</strong></p>
+<ol>
+<li>Ganti <code>[NAMA]</code>, <code>[NIM]</code>, <code>[KELAS]</code>, <code>[NAMA PROGRAM STUDI]</code>, <code>[NAMA FAKULTAS]</code>, dan <code>[NAMA UNIVERSITAS]</code> sesuai data diri.</li>
+<li>Tempelkan logo fakultas pada penanda `</li>
+</ol>
+<div class="logo">LOGO<br>FAKULTAS</div>
+<p><code>. 3. Ganti setiap penanda </code><span class="ph">[SISIPKAN GAMBAR/SCREENSHOT: ...]</span><code>dengan gambar dari</code>docs/screenshots/` atau tangkapan layar aplikasi.
+4. Setelah seluruh gambar ditempel, ekspor dokumen ke PDF dengan pengaturan halaman A4, margin 2,54 cm, dan penomoran halaman di bagian bawah.</p>
+
+</body>
+</html>

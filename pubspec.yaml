@@ -1,0 +1,43 @@
+name: tapak
+description: "Tapak — panduan peregangan dan ergonomi untuk pekerja layar."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  # Tipografi: Plus Jakarta Sans (judul) & Inter (body).
+  google_fonts: ^9.0.0
+  # Disiapkan untuk migrasi data dari JSON lokal ke REST API.
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  markdown: ^7.3.1
+
+flutter:
+  uses-material-design: true
+
+  # Aset data & gambar.
+  assets:
+    - assets/data/
+    - assets/images/
+    - assets/images/gerakan/
+
+  # Font opsional: unduh dari Google Fonts lalu letakkan di assets/fonts/
+  # agar aplikasi tetap berjalan tanpa koneksi internet.
+  # fonts:
+  #   - family: PlusJakartaSans
+  #     fonts:
+  #       - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+  #       - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+  #         weight: 700

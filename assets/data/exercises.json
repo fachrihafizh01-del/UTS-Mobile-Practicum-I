@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "versi": 1,
+    "diperbarui": "2026-10-24",
+    "sumber": "Data dummy lokal — siap diganti respons REST API"
+  },
+  "data": [
+    {
+      "id": "ex-001",
+      "populer": true,
+      "nama": "Putar Leher Perlahan",
+      "kategori": "leher-bahu",
+      "deskripsi": "Gerakan pemanasan untuk mengurangi kekakuan leher setelah lama menatap layar.",
+      "gambar": "assets/images/gerakan/putar-leher.webp",
+      "durasiDetik": 60,
+      "repetisi": "2 set × 8 putaran",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Otot leher", "Otot trapezius atas"],
+      "tujuan": "Mengembalikan rentang gerak leher dan melancarkan aliran darah ke area kepala dan bahu.",
+      "langkah": [
+        "Duduk tegak, rahang rileks, dan pandangan lurus ke depan.",
+        "Jatuhkan dagu perlahan ke arah dada, tahan satu tarikan napas.",
+        "Putar kepala ke kanan hingga telinga mendekati bahu, lalu ke belakang.",
+        "Lanjutkan ke kiri dan kembali ke depan dengan kecepatan lambat dan merata.",
+        "Ulangi 8 putaran, lalu ganti arah putaran."
+      ],
+      "kesalahanUmum": [
+        "Memutar terlalu cepat hingga terasa pusing.",
+        "Mengangkat bahu bersamaan dengan putaran kepala.",
+        "Menahan napas saat kepala berada di belakang."
+      ],
+      "peringatan": "Hentikan jika muncul rasa pusing, mual, atau nyeri tajam. Hindari gerakan ini bila sedang cedera leher.",
+      "manfaat": ["Mengurangi kaku leher", "Meningkatkan fokus", "Meredakan ketegangan bahu"]
+    },
+    {
+      "id": "ex-002",
+      "nama": "Peregangan Leher Samping",
+      "kategori": "leher-bahu",
+      "deskripsi": "Menarik otot samping leher secara lembut untuk meredakan ketegangan akibat posisi kepala menunduk.",
+      "gambar": "assets/images/gerakan/leher-samping.webp",
+      "durasiDetik": 45,
+      "repetisi": "3 × 20 detik per sisi",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Otot sternocleidomastoid", "Otot levator scapulae"],
+      "tujuan": "Merelaksasi otot samping leher yang sering menegang saat bekerja di depan laptop.",
+      "langkah": [
+        "Duduk dengan punggung menempel sandaran kursi.",
+        "Tahan bahu kiri agar tetap turun, lalu miringkan kepala ke arah bahu kanan.",
+        "Letakkan tangan kanan di sisi kepala kiri hanya sebagai penopang, tanpa menarik paksa.",
+        "Tahan 20 detik sambil bernapas perlahan, lalu kembali ke posisi netral.",
+        "Ulangi pada sisi sebaliknya."
+      ],
+      "kesalahanUmum": [
+        "Menarik kepala terlalu kuat hingga terasa nyeri.",
+        "Mengangkat bahu yang seharusnya tetap rileks.",
+        "Memutar kepala saat sedang dimiringkan."
+      ],
+      "peringatan": null,
+      "manfaat": ["Mengurangi ketegangan leher", "Membantu memperbaiki postur kepala", "Meredakan sakit kepala tegang"]
+    },
+    {
+      "id": "ex-003",
+      "nama": "Angkat Bahu",
+      "kategori": "leher-bahu",
+      "deskripsi": "Gerakan sederhana untuk melepas beban di bahu setelah mengetik dalam waktu lama.",
+      "gambar": "assets/images/gerakan/angkat-bahu.webp",
+      "durasiDetik": 60,
+      "repetisi": "2 set × 10 repetisi",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Otot trapezius", "Otot bahu"],
+      "tujuan": "Mengaktifkan kembali otot bahu yang kaku dan mengurangi sensasi berat di pundak.",
+      "langkah": [
+        "Duduk tegak dengan kedua lengan rileks di samping badan.",
+        "Tarik napas sambil mengangkat kedua bahu mendekati telinga.",
+        "Tahan 3 detik, rasakan ketegangan tanpa menaikkan leher.",
+        "Buang napas sambil menjatuhkan bahu kembali ke posisi awal.",
+        "Ulangi 10 kali, lalu istirahat 20 detik dan ulangi satu set lagi."
+      ],
+      "kesalahanUmum": [
+        "Mengangkat bahu sambil menegangkan leher.",
+        "Gerakan terlalu cepat sehingga otot tidak sempat mengendur.",
+        "Membungkukkan punggung saat mengangkat bahu."
+      ],
+      "peringatan": null,
+      "manfaat": ["Melancarkan sirkulasi bahu", "Mengurangi rasa berat di pundak", "Membantu menjaga postur duduk"]
+    },
+    {
+      "id": "ex-004",
+      "populer": true,
+      "nama": "Peregangan Dada di Kursi",
+      "kategori": "punggung",
+      "deskripsi": "Membuka area dada yang memendek akibat bahu membulat ke depan saat mengetik.",
+      "gambar": "assets/images/gerakan/peregangan-dada.webp",
+      "durasiDetik": 120,
+      "repetisi": "3 × 30 detik",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Otot pectoralis", "Otot depan bahu"],
+      "tujuan": "Mengoreksi postur bahu membulat dan memberi ruang lebih lega pada dada.",
+      "langkah": [
+        "Duduk di tepi kursi dengan punggung tegak.",
+        "Letakkan kedua tangan di belakang punggung dan genggam jari dengan lembut.",
+        "Tarik bahu ke belakang dan ke bawah, lalu angkat dada.",
+        "Tahan 30 detik sambil bernapas normal, lalu lepaskan perlahan.",
+        "Ulangi 3 kali dengan jeda 10 detik."
+      ],
+      "kesalahanUmum": [
+        "Mengangkat bahu alih-alih membuka dada.",
+        "Melengkungkan punggung bawah secara berlebihan.",
+        "Menahan napas selama peregangan."
+      ],
+      "peringatan": "Hentikan jika terasa nyeri menjalar ke lengan atau muncul kesemutan pada tangan.",
+      "manfaat": ["Membuka area dada", "Mengurangi bahu membulat", "Membantu pernapasan lebih lega"]
+    },
+    {
+      "id": "ex-005",
+      "populer": true,
+      "nama": "Kucing–Sapi",
+      "kategori": "punggung",
+      "deskripsi": "Gerakan mobilisasi tulang belakang yang menyeimbangkan posisi membungkuk dan melengkung.",
+      "gambar": "assets/images/gerakan/kucing-sapi.webp",
+      "durasiDetik": 180,
+      "repetisi": "8 repetisi",
+      "tingkat": "Sedang",
+      "posisi": "Merangkak",
+      "target": ["Tulang belakang", "Otot perut", "Otot punggung"],
+      "tujuan": "Menjaga kelenturan tulang belakang dan meredakan kaku punggung setelah duduk lama.",
+      "langkah": [
+        "Posisikan tangan dan lutut di lantai, pergelangan tangan sejajar bahu.",
+        "Tarik napas sambil melengkungkan punggung ke bawah dan angkat dada (posisi sapi).",
+        "Buang napas sambil membulatkan punggung dan menundukkan kepala (posisi kucing).",
+        "Bergerak perlahan mengikuti irama napas tanpa menyentak.",
+        "Ulangi 8 kali, lalu duduk kembali dengan hati-hati."
+      ],
+      "kesalahanUmum": [
+        "Menggerakkan hanya leher, bukan seluruh tulang belakang.",
+        "Mengunci siku hingga kaku.",
+        "Menahan napas di salah satu posisi."
+      ],
+      "peringatan": "Hindari jika sedang nyeri punggung akut atau baru menjalani operasi tulang belakang.",
+      "manfaat": ["Menjaga kelenturan punggung", "Meredakan kaku pinggang", "Melatih koordinasi napas"]
+    },
+    {
+      "id": "ex-006",
+      "nama": "Putar Punggung Duduk",
+      "kategori": "punggung",
+      "deskripsi": "Rotasi ringan tulang belakang untuk mengurangi kekakuan akibat duduk terlalu lama.",
+      "gambar": "assets/images/gerakan/putar-punggung.webp",
+      "durasiDetik": 90,
+      "repetisi": "2 set × 8 putaran",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Otot obliques", "Tulang belakang bagian tengah"],
+      "tujuan": "Mengembalikan mobilitas rotasi punggung tanpa membebani pinggang.",
+      "langkah": [
+        "Duduk tegak dengan kedua kaki menapak lantai.",
+        "Silangkan tangan di depan dada atau letakkan di pinggang.",
+        "Putar badan ke kanan sejauh terasa nyaman, tahan 3 detik.",
+        "Kembali ke tengah, lalu putar ke kiri dengan durasi yang sama.",
+        "Ulangi hingga 8 putaran untuk setiap arah."
+      ],
+      "kesalahanUmum": [
+        "Memutar dari pinggang sehingga kaki ikut bergeser.",
+        "Memutar kepala lebih jauh daripada badan.",
+        "Memaksakan putaran hingga terasa nyeri."
+      ],
+      "peringatan": null,
+      "manfaat": ["Mengurangi kaku punggung", "Melatih stabilitas duduk", "Membantu pencernaan tetap nyaman"]
+    },
+    {
+      "id": "ex-007",
+      "populer": true,
+      "nama": "Peregangan Ekstensor Pergelangan",
+      "kategori": "pergelangan-tangan",
+      "deskripsi": "Menarik otot sisi atas lengan bawah yang tegang akibat mengetik dan menggunakan mouse.",
+      "gambar": "assets/images/gerakan/ekstensor-pergelangan.webp",
+      "durasiDetik": 60,
+      "repetisi": "3 × 20 detik per tangan",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Otot ekstensor lengan bawah"],
+      "tujuan": "Mengurangi ketegangan lengan bawah dan menurunkan risiko nyeri pergelangan.",
+      "langkah": [
+        "Luruskan tangan kanan ke depan dengan telapak menghadap bawah.",
+        "Tekuk pergelangan ke bawah hingga jari mengarah ke lantai.",
+        "Gunakan tangan kiri untuk menekan punggung tangan kanan dengan lembut.",
+        "Tahan 20 detik, lalu lepaskan dan ganti tangan.",
+        "Ulangi tiga kali untuk masing-masing tangan."
+      ],
+      "kesalahanUmum": [
+        "Menekan terlalu kuat hingga terasa tajam.",
+        "Mengunci siku secara berlebihan.",
+        "Mengangkat bahu saat meregang."
+      ],
+      "peringatan": null,
+      "manfaat": ["Meredakan tegang lengan bawah", "Menjaga kelenturan pergelangan", "Membantu mencegah nyeri akibat mouse"]
+    },
+    {
+      "id": "ex-008",
+      "nama": "Putar Pergelangan",
+      "kategori": "pergelangan-tangan",
+      "deskripsi": "Mobilisasi sendi pergelangan dalam lingkaran penuh dengan tempo lambat.",
+      "gambar": "assets/images/gerakan/putar-pergelangan.webp",
+      "durasiDetik": 45,
+      "repetisi": "2 set × 10 putaran",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Sendi pergelangan", "Ligamen tangan"],
+      "tujuan": "Menjaga pelumasan sendi dan mengurangi sensasi kaku pada pergelangan tangan.",
+      "langkah": [
+        "Angkat kedua tangan ke depan dada dengan jari rileks.",
+        "Putar pergelangan tangan kanan membentuk lingkaran lambat ke arah dalam.",
+        "Lakukan 10 putaran, lalu ganti arah ke luar.",
+        "Ulangi gerakan yang sama pada tangan kiri.",
+        "Akhiri dengan mengibaskan tangan perlahan."
+      ],
+      "kesalahanUmum": [
+        "Memutar terlalu cepat sehingga sendi berbunyi keras.",
+        "Menegangkan jari selama gerakan.",
+        "Melakukan gerakan saat pergelangan baru cedera."
+      ],
+      "peringatan": "Lewati gerakan ini bila pergelangan sedang bengkak atau nyeri akibat cedera baru.",
+      "manfaat": ["Menjaga mobilitas sendi", "Mengurangi kaku tangan", "Melancarkan sirkulasi"]
+    },
+    {
+      "id": "ex-009",
+      "nama": "Doa Terbalik",
+      "kategori": "pergelangan-tangan",
+      "deskripsi": "Peregangan sisi dalam pergelangan dan jari dengan menempelkan kedua telapak tangan.",
+      "gambar": "assets/images/gerakan/doa-terbalik.webp",
+      "durasiDetik": 60,
+      "repetisi": "3 × 15 detik",
+      "tingkat": "Ringan",
+      "posisi": "Duduk",
+      "target": ["Otot fleksor lengan bawah", "Sendi jari"],
+      "tujuan": "Mengimbangi posisi pergelangan yang terus menekuk saat memakai keyboard.",
+      "langkah": [
+        "Tempelkan kedua telapak tangan di depan dada seperti posisi berdoa.",
+        "Turunkan kedua tangan perlahan hingga pergelangan terasa meregang.",
+        "Tahan 15 detik tanpa mengangkat siku.",
+        "Kembalikan tangan ke posisi awal dengan lembut.",
+        "Ulangi tiga kali."
+      ],
+      "kesalahanUmum": [
+        "Memaksakan telapak tangan menempel penuh hingga nyeri.",
+        "Mengangkat siku terlalu tinggi.",
+        "Menarik jari secara berlebihan."
+      ],
+      "peringatan": null,
+      "manfaat": ["Meredakan tegang sisi dalam pergelangan", "Menjaga kelenturan jari", "Mengurangi risiko cedera regang"]
+    },
+    {
+      "id": "ex-010",
+      "populer": true,
+      "nama": "Berdiri–Duduk dari Kursi",
+      "kategori": "kaki",
+      "deskripsi": "Latihan kekuatan ringan untuk kaki dan pinggul yang jarang aktif saat bekerja duduk.",
+      "gambar": "assets/images/gerakan/berdiri-duduk.webp",
+      "durasiDetik": 120,
+      "repetisi": "2 set × 10 repetisi",
+      "tingkat": "Sedang",
+      "posisi": "Duduk",
+      "target": ["Otot paha", "Otot bokong", "Otot inti"],
+      "tujuan": "Mengaktifkan otot besar kaki dan melancarkan sirkulasi setelah duduk lama.",
+      "langkah": [
+        "Duduk di kursi stabil dengan kaki menapak lantai selebar pinggul.",
+        "Letakkan tangan di dada atau luruskan ke depan untuk keseimbangan.",
+        "Berdiri perlahan dengan mendorong melalui tumit, tanpa memakai tangan.",
+        "Turun kembali ke kursi secara terkontrol hingga menyentuh dudukan.",
+        "Ulangi 10 kali, istirahat 30 detik, lalu lakukan satu set lagi."
+      ],
+      "kesalahanUmum": [
+        "Menjatuhkan badan ke kursi tanpa kontrol.",
+        "Membiarkan lutut masuk ke dalam saat berdiri.",
+        "Menahan napas ketika mengangkat badan."
+      ],
+      "peringatan": "Gunakan kursi dengan sandaran stabil. Hentikan bila terasa nyeri pada lutut atau pinggul.",
+      "manfaat": ["Menguatkan otot kaki", "Melancarkan sirkulasi", "Mengurangi kekakuan pinggul"]
+    },
+    {
+      "id": "ex-011",
+      "nama": "Peregangan Betis di Dinding",
+      "kategori": "kaki",
+      "deskripsi": "Peregangan betis dan tendon Achilles untuk kaki yang sering terasa pegal setelah beraktivitas.",
+      "gambar": "assets/images/gerakan/peregangan-betis.webp",
+      "durasiDetik": 90,
+      "repetisi": "2 × 30 detik per kaki",
+      "tingkat": "Ringan",
+      "posisi": "Berdiri",
+      "target": ["Otot betis", "Tendon Achilles"],
+      "tujuan": "Mengurangi pegal betis dan menjaga kelenturan pergelangan kaki bagian belakang.",
+      "langkah": [
+        "Berdiri menghadap dinding dengan jarak satu langkah.",
+        "Letakkan kedua telapak tangan di dinding setinggi dada.",
+        "Langkahkan kaki kanan ke belakang, tahan tumit tetap menempel lantai.",
+        "Tekuk lutut kiri hingga betis kanan terasa meregang, tahan 30 detik.",
+        "Ganti sisi dan ulangi sebanyak dua kali."
+      ],
+      "kesalahanUmum": [
+        "Mengangkat tumit kaki belakang.",
+        "Membiarkan kaki belakang menekuk.",
+        "Mencondongkan badan terlalu jauh ke dinding."
+      ],
+      "peringatan": null,
+      "manfaat": ["Meredakan pegal betis", "Menjaga kelenturan pergelangan kaki", "Membantu kenyamanan saat berjalan"]
+    },
+    {
+      "id": "ex-012",
+      "nama": "Ekstensi Kaki Duduk",
+      "kategori": "kaki",
+      "deskripsi": "Latihan ringan untuk meluruskan lutut dan mengaktifkan otot paha depan tanpa alat.",
+      "gambar": "assets/images/gerakan/ekstensi-kaki.webp",
+      "durasiDetik": 120,
+      "repetisi": "2 set × 12 repetisi per kaki",
+      "tingkat": "Sedang",
+      "posisi": "Duduk",
+      "target": ["Otot quadriceps", "Sendi lutut"],
+      "tujuan": "Menguatkan otot paha depan dan menjaga kelenturan sendi lutut saat bekerja duduk.",
+      "langkah": [
+        "Duduk tegak dengan punggung menempel sandaran kursi.",
+        "Luruskan kaki kanan ke depan tanpa mengunci lutut.",
+        "Tahan 3 detik sambil mengencangkan otot paha.",
+        "Turunkan kaki perlahan tanpa menjatuhkannya.",
+        "Lakukan 12 kali, lalu ganti kaki."
+      ],
+      "kesalahanUmum": [
+        "Mengangkat kaki terlalu tinggi hingga pinggang melengkung.",
+        "Mengunci lutut dengan keras.",
+        "Mengayunkan kaki dengan cepat."
+      ],
+      "peringatan": "Hentikan bila lutut terasa nyeri atau berbunyi disertai rasa sakit.",
+      "manfaat": ["Menguatkan otot paha", "Menjaga stabilitas lutut", "Mengurangi kekakuan saat berdiri"]
+    }
+  ]
+}
